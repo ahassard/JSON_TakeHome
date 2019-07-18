@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- External Style Sheet CSS -->
+    <link href="./style.css" rel="stylesheet" type="text/css">
+
+    <title>NetFlix - Stranger Things</title>
+</head>
+<!--Nav Scroll = 1 Page Nav-->
+
+<body>
+    <!--Header showing Netflix Logo and Language Selector-->
+    <header>
+    <aside class="logo">
+        <a href="" class="logo"><img src="./images/netflix-transparent-1.png" height="75px" width="165px"></a>
+    </aside>
+    <aside class="lang">
+        <ul class="languagepicker">
+            <a href="#en" onclick="loadEng()">
+                <li><img src="http://i64.tinypic.com/fd60km.png">English</li>
+            </a>
+            <a href="#nl" onclick="loadPig()">
+                <li><img src="http://i44.tinypic.com/vsf96w.jpg" >Pig Latin</li>
+            </a>
+        </ul>
+    </aside>
+    </header>
+    <!--Navigation Bar for One page-->
+    <nav>
+        <div>
+            <ul class="nav_links">
+                <li>
+                    <a href="#section-inspiration" class="nav_link">Inspiration</a>
+                </li>
+                <li>
+                    <a href="#section-gallery" class="nav_link">Gallery</a>
+                </li>
+                <li>
+                    <a href="#section-portfolio" class="nav_link">Episodes</a>
+                </li>
+            </ul>
+        </div>
+        <!--Mobile Version of Nav Bar-->
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <!--Inspiration Section - Stranger Things logo, text, and video-->
+    <div class="container col-12 col-sm-6 col-lg-12 py-3 py-sm-5" id="section-inspiration">
+        <section id="inspiration">
+            <h2 class="display-4 text-center">Inspiration</h2><hr>
+            <container class="container-top">
+            <div class="top-1">
+                <h2 id="heading"></h2><br>
+                <p id="description"></p><br>
+            </div>
+            <div class="top-2">
+                <iframe id="video"></iframe><br>
+            <div class="top-3">
+                <article><p id="snippet2"></p></article>
+                <div class="locations">
+                    <h5 id="location1"></h5>
+                    <h5 id="location2"></h5>
+                    <h5 id="location3"></h5>
+                    <h5 id="location4"></h5>
+                    <h5 id="location5"></h5>
+                </div>
+            </div>
+            </container>
+        </section>
+        
+    </div>
+
+    <div class="container col-12 col-sm-6 col-lg-12 py-3 py-sm-5" id="section-gallery">
+        <section id="gallery">
+            <h2 class="display-4 text-center">Gallery</h2>
+        <container class="container-middle">
+            <div class="middle-1">
+                <div id="images"></div>
+            </div>
+            <div class="middle-2">
+            <h5 id="snippet1"></h5>
+            <br>
+            <h5 id="snippet3"></h5>
+            </div>
+        </container>
+        </section>
+    </div>   
+    <!--Inspiration Section - Stranger Things logo, text, and video-->
+    <div class="container col-12 col-sm-6 col-lg-12 py-3 py-sm-5" id="section-inspiration">
+        <section id="episdoes">
+            <h2 class="display-4 text-center">Episodes</h2> 
+            <div id="eps">
+        </section>
+   
+
+    <!--Footer for Copyright-->
+    <footer class="footer" id="section-footer">
+        
+                <div class="col-12 col-sm-6 col-lg-12 py-3 py-sm-5">
+                    <ul class="list-inline text-center">
+                        <li class="list-inline-item">&copy; 2019 Netflix</li>
+                        <li class="list-inline-item">All rights reserved.</li>
+                    </ul>
+                </div>
+            </div>
+            
+    </footer>
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <!--local JS and JSON files-->
+    <script src=".en_US.json" type="text/json"></script>
+    <script src="./la_PG.json" type="tex/json"></script>
+    <script src="./main.js" type="text/javascript"></script>
+</body>
+
+</html>
